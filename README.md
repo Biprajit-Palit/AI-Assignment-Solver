@@ -1,75 +1,106 @@
 # AI Assignment Solver with Streamlit
 
-This repository contains my first **Large Language Model (LLM)** project—an AI-powered assignment solver built using **Streamlit**. The app accepts various file formats (PDF, Word, PowerPoint, Excel, Python code) and generates assignment solutions using Google’s **Gemini 1.5 Flash** LLM.
+This repository contains my **first Large Language Model (LLM) project** — an AI-powered assignment solver built using **Streamlit**. The app accepts multiple file formats (PDF, Word, PowerPoint, Excel, Python code) and generates structured assignment solutions using **Google’s Gemini 1.5 Flash** LLM.  
 
-[Deployed Here](https://ai-assignment-solver.streamlit.app/)
+👉 [Live Demo](https://ai-assignment-solver.streamlit.app/)  
 
-## Features
+---
 
-- **File Upload Support**: Handles multiple file formats (PDF, DOCX, PPTX, XLSX, PY).
-- **AI-Generated Solutions**: Uses the Gemini 1.5 Flash LLM to generate step-by-step solutions.
-- **Multiple Related Files**: Allows users to upload related files (like data or code) and integrates their content into the solution generation process.
-- **Streamlit-Based UI**: Simple, intuitive interface for uploading files and receiving results.
+## ✨ Features
 
-## How It Works
+- **Multi-Format File Upload**: Supports PDF, DOCX, PPTX, XLSX, and Python code files.  
+- **AI-Powered Solutions**: Uses Gemini 1.5 Flash to generate step-by-step solutions.  
+- **Context-Aware Processing**: Accepts multiple related files (e.g., data/code) and integrates them into solution generation.  
+- **Streamlit Interface**: Clean, interactive UI for uploading files and viewing results.  
 
-1. **Upload Assignment**: You can upload your assignment in supported formats (PDF, DOCX, PPTX, XLSX, or Python code).
-2. **Solution Generation**: The app reads the content from your files, sends it to the Gemini model, and generates a detailed solution based on the assignment’s instructions.
-3. **Receive Results**: The AI provides a structured solution, which you can review and use for learning purposes.
+---
 
-### Supported File Types
+## ⚙️ How It Works
 
-- PDF (.pdf)
-- Word Document (.docx)
-- PowerPoint (.pptx)
-- Excel Spreadsheet (.xlsx)
-- Python Code (.py)
+1. **Upload Assignment** → Add your file(s) in supported formats.  
+2. **Solution Generation** → Content is parsed and sent to Gemini API for processing.  
+3. **Receive Results** → AI returns a structured solution inside the app.  
 
-## Installation
+---
 
-To run this project locally, follow these steps:
+## 📂 Supported File Types
+
+- PDF (.pdf)  
+- Word Document (.docx)  
+- PowerPoint (.pptx)  
+- Excel Spreadsheet (.xlsx)  
+- Python Code (.py)  
+
+---
+
+## 🚀 Installation
 
 ### Prerequisites
-
-- Python 3.8+
-- Google Gemini API access (API key required)
+- Python 3.8+  
+- Google Gemini API access (API key required)  
 
 ### Setup
+```bash
+# 1. Clone repository
+git clone https://github.com/<your-username>/ai-assignment-solver.git
+cd ai-assignment-solver
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/SUKHMAN-SINGH-1612/ai-assignment-solver.git
-   cd ai-assignment-solver
-2. Create a Virtual Environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-3. Install Dependencies:
-   ```bash
-   pip install -r requirements.txt
-4. Set Google API Key:
-   ```bash
-   export GOOGLE_API_KEY="your-google-api-key"
-5. Run the Streamlit App:
-   ```bash
-    streamlit run main.py
+# 2. Create virtual environment
+python -m venv venv
+# Activate it
+source venv/bin/activate     # Linux/Mac
+venv\Scripts\activate        # Windows
 
-## How to Use
-1. Upload your assignment file in the supported formats (PDF, DOCX, PPTX, XLSX, PY).
-2. Optionally, upload any additional related files.
-3. Click "Generate Solution" to have the LLM process the assignment and provide a solution.
-4. The solution is displayed within the app for you to review.
-## Project Purpose
-This app was built as part of my portfolio project to explore the integration of LLMs with file handling and natural language understanding. The app is a demonstration of:
-- Working with file uploads in Streamlit.
-- Parsing multiple file formats.
-- Interfacing with Google’s Gemini LLM API to generate content.
+# 3. Install dependencies
+pip install -r requirements.txt
 
-## Important Disclaimer
-This app is intended for demonstration purposes only. It is not designed to be used for actual coursework or assignments. If you use the app for academic purposes, you are responsible for ensuring compliance with academic integrity policies. This project serves as a learning and portfolio tool, and I do not encourage or endorse its use for cheating or plagiarism.
+# 4. Set your Gemini API key
+export GOOGLE_API_KEY="your-google-api-key"   # Linux/Mac
+set GOOGLE_API_KEY="your-google-api-key"      # Windows
 
-## Future Improvements
-- Enhance parsing for additional file types.
-- Optimize the integration for even more complex file structures.
-- Add support for other LLM APIs.
-- Improve UI/UX.
+# 5. Run the app
+streamlit run main.py
+```
+---
+## 🎯 How to Use
+
+1. Upload your assignment file(s).  
+2. Optionally, add related files (data, code, etc.).  
+3. Click **Generate Solution**.  
+4. View the structured solution in the app.  
+---
+## 📌 Project Purpose
+
+I (**Biprajit Palit**, CSE student at **NIT Agartala**) built this project as part of my portfolio to explore **LLM integration with file handling and natural language understanding**.
+
+This project showcases:  
+- Handling file uploads in **Streamlit**  
+- Parsing multiple file formats in **Python**  
+- Interfacing with **Google’s Gemini LLM API**  
+- Building user-facing AI applications  
+
+---
+
+## ⚠️ Disclaimer
+
+This app is created **for learning and demonstration purposes only**. It is not intended for academic submission. Users are responsible for ensuring compliance with academic integrity policies.  
+
+---
+
+## 🔮 Future Improvements
+
+- Support for more file types  
+- Smarter parsing of complex documents  
+- Integration with additional LLM APIs  
+- UI/UX refinements  
+
+---
+
+## 🛠️ Skills Demonstrated
+
+- **Programming**: Python  
+- **Frameworks**: Streamlit  
+- **AI/ML**: Large Language Models (Gemini 1.5 Flash)  
+- **APIs**: Google Gemini API integration  
+- **Other**: File handling (PDF, DOCX, PPTX, XLSX, PY), Environment setup, Deployment  
+
